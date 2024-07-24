@@ -1,0 +1,15 @@
+{
+  "name": "haversack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "grunt"
+  },
+  "author": "Jumpsand",
+  "devDependencies": {
+    "grunt": "^1.6.1",
+    "grunt-contrib-cssmin": "^5.0.0",
+    "grunt-purgecss": "^6.0.0"
+  }
+}
