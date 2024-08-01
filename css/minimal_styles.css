@@ -1,7 +1,9 @@
 body {
     font-family: "PT Serif", Georgia, Times, serif;
     font-size: 26pt;
+    font-size: clamp(22pt, calc(5vw), 26pt);
     margin: 0;
+    padding: 60px;
     padding: var(--space);
     line-height: 1.4;
     color: #1A1919;
@@ -39,24 +41,27 @@ ul {
 figure {
     display: flex;
     width: 100%;
+    margin: 120px 0 60px;
     margin: calc(var(--space) * 2) 0 60px;
+    gap: 10px;
     gap: calc(var(--space) / 8);
     flex-wrap: wrap;
     max-width: 100ch;
 }
 
 figure img {
-    flex: 1 0 150px;
+    flex: 1 0 100px;
     aspect-ratio: 1;
     width: 100%;
     object-fit: cover;
     transition: 200ms scale, 200ms box-shadow;
 }
-
-figure img:hover {
-    scale: 110%;
-    box-shadow: 0 0 10px dimgrey;
-    z-index: 1;
+@media (pointer: fine) {
+    figure img:hover {
+        scale: 110%;
+        box-shadow: 0 0 10px dimgrey;
+        z-index: 1;
+    }
 }
 
 footer {
