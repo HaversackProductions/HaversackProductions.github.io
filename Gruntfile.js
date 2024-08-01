@@ -9,7 +9,7 @@ module.exports = function(grunt) {
           content: ['./*.html']
         },
         files: {
-          'css/styles.dist.css': ['css/archived_styles.css']
+          'css/styles.dist.css': ['css/minimal_styles.css']
         }
       }
     },

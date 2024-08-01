@@ -1,0 +1,68 @@
+body {
+    font-family: "PT Serif", Georgia, Times, serif;
+    font-size: 26pt;
+    margin: 0;
+    padding: var(--space);
+    line-height: 1.4;
+    color: #1A1919;
+    --space: clamp(30px, calc(6vw), 80px);
+}
+
+header {
+    margin-bottom: 140px;
+}
+.logo {
+    transform-origin: 0 0;
+    transition: 100ms scale ease;
+}
+header:hover img {
+    scale: 200%;
+}
+
+a {
+    color: inherit;
+}
+a:visited {
+    color: dimgray;
+}
+
+p {
+    max-width: 675px;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    max-width: 675px;
+}
+
+figure {
+    display: flex;
+    width: 100%;
+    margin: calc(var(--space) * 2) 0 60px;
+    gap: calc(var(--space) / 8);
+    flex-wrap: wrap;
+    max-width: 100ch;
+}
+
+figure img {
+    flex: 1 0 150px;
+    aspect-ratio: 1;
+    width: 100%;
+    object-fit: cover;
+    transition: 200ms scale, 200ms box-shadow;
+}
+
+figure img:hover {
+    scale: 110%;
+    box-shadow: 0 0 10px dimgrey;
+    z-index: 1;
+}
+
+footer {
+    font-size: 12pt;
+}
+
+footer p {
+    margin: 0;
+}
